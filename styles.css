@@ -55,6 +55,19 @@ html {
   text-decoration: None;
 }
 
+.about-image{
+    float: left;
+}
+
+.image-caption {
+    clear: left;
+    float: left;
+}
+
+.about {
+    text-align: center;
+}
+
 body {
     background-color : var(--cg-light_purple);
     position: relative;
