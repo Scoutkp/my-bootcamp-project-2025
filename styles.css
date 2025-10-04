@@ -3,6 +3,7 @@
     --cg-light_purple: rgb(157, 78, 221);
     --cg-white: rgb(255, 255, 255);
     --cg-black: rgb(0, 0, 0);
+    --cg-blue: rgb(36, 94, 255);
     
 }
 html {
@@ -27,10 +28,16 @@ html {
 }
 
 .navbar a {
+    text-decoration: none;
     color: var(--cg-light_purple); 
     font-weight: bold;
     font-size: larger;
     margin: 0 12px;
+}
+
+.navbar a:hover {
+  color: var(--cg-blue);
+  text-decoration: underline;
 }
 
 body {
