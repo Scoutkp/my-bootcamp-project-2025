@@ -76,3 +76,15 @@ body {
     margin: 0;
     font-family: monospace;
 }
+
+.footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4%;
+    background-color: var(--cg-dark_purple);
+    color: var(--cg-white);
+    align-items: center;
+    justify-content: center;
+}
