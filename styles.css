@@ -1,6 +1,7 @@
 :root {
     --cg-dark_purple: rgb(60, 9, 108);
     --cg-light_purple: rgb(179, 97, 246);
+    --cg-lighter_purple: rgb(202, 137, 255);
     --cg-white: rgb(255, 255, 255);
     --cg-black: rgb(0, 0, 0);
     --cg-blue: rgb(36, 94, 255);
@@ -64,19 +65,27 @@ html {
     text-align: center;
     padding: 20px;
     justify-content: space-between;
-    font-size: 15px;
+    font-size: 20px;
     border: 2px solid var(--cg-dark_purple);
-    background-color: var(--cg-white);
+    background-color: var(--cg-lighter_purple);
     border-radius: 5px;
     margin: 20px;
 }
 
+.about-text {
+    flex-direction: row;
+    text-align: left;
+}
+
 .about-image{
+    flex-direction: column;
     float: left;
-    margin: 0px 20px 0px 0px;
+    margin: 0px 20px 0px 10px;
 }
 
 .image-caption {
+    font-size: 15px;
+    flex-direction: column;
     clear: left;
     float: left;
 }
