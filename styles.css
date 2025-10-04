@@ -77,10 +77,14 @@ html {
     text-align: left;
 }
 
-.about-image{
+.about-image {
     flex-direction: column;
     float: left;
     margin: 0px 20px 0px 10px;
+}
+
+.image {
+    border: 2px solid var(--cg-dark_purple);
 }
 
 .image-caption {
@@ -88,6 +92,48 @@ html {
     flex-direction: column;
     clear: left;
     float: left;
+}
+
+.project1 {
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    justify-content: space-between;
+    font-size: 20px;
+    border: 2px solid var(--cg-dark_purple);
+    background-color: var(--cg-lighter_purple);
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.project2 {
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    justify-content: space-between;
+    font-size: 20px;
+    border: 2px solid var(--cg-dark_purple);
+    background-color: var(--cg-lighter_purple);
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.project-name {
+    float: left;
+    font-style: bold;
+}
+
+.project-image {
+    flex-direction: column;
+    clear: left;
+    float: left;
+    margin: 0px 20px 0px 10px;
+    border: 2px solid var(--cg-dark_purple);
+}
+
+.project-description {
+  flex-direction: row;
+  text-align: left;
 }
 
 body {
