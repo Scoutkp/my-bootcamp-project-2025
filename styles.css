@@ -120,7 +120,9 @@ html {
 
 .project-name {
     float: left;
-    font-style: bold;
+    font-weight: bold;
+    margin: 20px;
+    text-align: left;
 }
 
 .project-image {
