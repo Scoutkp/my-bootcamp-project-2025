@@ -1,6 +1,6 @@
 :root {
     --cg-dark_purple: rgb(60, 9, 108);
-    --cg-light_purple: rgb(157, 78, 221);
+    --cg-light_purple: rgb(179, 97, 246);
     --cg-white: rgb(255, 255, 255);
     --cg-black: rgb(0, 0, 0);
     --cg-blue: rgb(36, 94, 255);
@@ -55,8 +55,25 @@ html {
   text-decoration: None;
 }
 
+.page-title {
+    margin: 20px;
+}
+
+.about {
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    justify-content: space-between;
+    font-size: 15px;
+    border: 2px solid var(--cg-dark_purple);
+    background-color: var(--cg-white);
+    border-radius: 5px;
+    margin: 20px;
+}
+
 .about-image{
     float: left;
+    margin: 0px 20px 0px 0px;
 }
 
 .image-caption {
@@ -64,11 +81,8 @@ html {
     float: left;
 }
 
-.about {
-    text-align: center;
-}
-
 body {
+    color: var(--cg-dark_purple);
     background-color : var(--cg-light_purple);
     position: relative;
     min-height: 100vh;
