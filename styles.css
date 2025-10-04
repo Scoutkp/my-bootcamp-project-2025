@@ -36,8 +36,23 @@ html {
 }
 
 .navbar a:hover {
-  color: var(--cg-blue);
+  color: var(--cg-white);
   text-decoration: underline;
+}
+
+.nav-list a {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  list-style: none;
+}
+
+.logo a {
+  font-family: "Comic mono", monospace;
+}
+
+.logo a:hover {
+  text-decoration: None;
 }
 
 body {
