@@ -152,6 +152,22 @@ html {
     padding: 20px;
 }
 
+.resume a span {
+    color: var(--cg-light_purple);
+    padding: 10px;
+    font-weight: bold;
+    background-color: var(--cg-dark_purple);
+    border: 2px solid var(--cg-light_purple);
+}
+
+.resume a {
+    text-decoration: none;
+}
+
+.resume a :hover {
+    color: var(--cg-white);
+}
+
 .entry {
     border: 2px solid var(--cg-dark_purple);
     border-radius: 5px;
