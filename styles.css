@@ -94,41 +94,33 @@ html {
     float: left;
 }
 
-.project1 {
+.project-info {
     display: flex;
-    text-align: center;
-    padding: 20px;
-    justify-content: space-between;
-    font-size: 20px;
-    border: 2px solid var(--cg-dark_purple);
-    background-color: var(--cg-lighter_purple);
-    border-radius: 5px;
-    margin: 20px;
+    clear: left;
+    float: left;
+    border: 2px;
+    margin: 0 0 20px 10px;
 }
 
-.project2 {
-    display: flex;
-    text-align: center;
+.project-description {
+    font-size: 15px;
     padding: 20px;
-    justify-content: space-between;
-    font-size: 20px;
-    border: 2px solid var(--cg-dark_purple);
+    margin: 0 20px 0 0;
     background-color: var(--cg-lighter_purple);
+    border: 2px solid var(--cg-dark_purple);
     border-radius: 5px;
-    margin: 20px;
 }
 
 .project-name {
+    width: 100%;
     float: left;
     font-weight: bold;
     margin: 20px;
     text-align: left;
+    font-size: 20px;
 }
 
 .project-image {
-    flex-direction: column;
-    clear: left;
-    float: left;
     margin: 0px 20px 0px 10px;
     border: 2px solid var(--cg-dark_purple);
 }
