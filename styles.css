@@ -138,7 +138,29 @@ html {
   text-align: left;
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.entry {
+    border: 2px solid var(--cg-dark_purple);
+    border-radius: 5px;
+    background-color: var(--cg-lighter_purple);
+    padding: 10px;
+}
+
 body {
+    overflow-y: scroll;
     color: var(--cg-dark_purple);
     background-color : var(--cg-light_purple);
     position: relative;
@@ -150,10 +172,9 @@ body {
 
 .footer {
     display: flex;
-    position: absolute;
     bottom: 0;
     width: 100%;
-    height: 4%;
+    height: 40px;
     background-color: var(--cg-dark_purple);
     color: var(--cg-white);
     align-items: center;
