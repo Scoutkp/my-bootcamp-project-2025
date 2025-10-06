@@ -166,6 +166,11 @@ html {
   padding: 10px;
 }
 
+.blog {
+    display: flex;
+    margin: 20px;
+}
+
 body {
   overflow-y: scroll;
   color: var(--cg-dark_purple);
