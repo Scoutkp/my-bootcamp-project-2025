@@ -166,19 +166,16 @@ input:hover[type="submit"] {
   padding: 20px;
 }
 
-.resume a span {
+.resume button {
   color: var(--cg-light_purple);
   padding: 10px;
   font-weight: bold;
   background-color: var(--cg-dark_purple);
   border: 2px solid var(--cg-light_purple);
+  border-radius: 5px;
 }
 
-.resume a {
-  text-decoration: none;
-}
-
-.resume a:hover {
+.resume button:hover {
   color: var(--cg-white);
 }
 
