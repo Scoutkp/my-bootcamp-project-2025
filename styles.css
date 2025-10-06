@@ -137,6 +137,29 @@ html {
   font-size: 20px;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+    border: 1px solid var(--cg-dark_purple);
+    border-radius: 3px;
+    padding: 10px;
+    margin: 0 0 20px 0;
+}
+
+input[type="submit"] {
+    background-color: var(--cg-dark_purple);
+    color: var(--cg-light_purple);
+    font-weight: bold;
+    font-family: "Comic mono", monospace;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+input:hover[type="submit"] {
+    color: var(--cg-white);
+}
+
 .resume {
   display: flex;
   flex-direction: column;
@@ -155,7 +178,7 @@ html {
   text-decoration: none;
 }
 
-.resume a :hover {
+.resume a:hover {
   color: var(--cg-white);
 }
 
