@@ -187,17 +187,42 @@ input:hover[type="submit"] {
   padding: 10px;
 }
 
-.blog {
-    display: flex;
-    margin: 20px;
+.blog-info {
+  display: flex;
+  clear: left;
+  float: left;
+  border: 2px;
+  margin: 0 0 20px 10px;
+}
+
+.blog-description {
+  font-size: 15px;
+  padding: 20px;
+  margin: 0 20px 0 0;
+  background-color: var(--cg-lighter_purple);
+  border: 2px solid var(--cg-dark_purple);
+  border-radius: 5px;
+}
+
+.blog-name {
+  width: 100%;
+  float: left;
+  font-weight: bold;
+  margin: 20px;
+  text-align: left;
+  font-size: 20px;
 }
 
 .blog-image {
-    width: 300px;
-    height: auto;
-    margin-right: 20px;
-    border: 2px solid var(--cg-dark_purple);
-    border-radius: 5px;
+  width: 400px;
+  height: auto;
+  margin: 0px 20px 0px 10px;
+  border: 2px solid var(--cg-dark_purple);
+}
+
+.blog-description {
+  flex-direction: row;
+  text-align: left;
 }
 
 body {
