@@ -20,6 +20,8 @@ var blogContainer = document.getElementById('blog-container');
 blogs.forEach(function (blog) {
     var blogElement = document.createElement('div');
     blogElement.classList.add('blog');
+    var blogHeader = document.createElement('div');
+    blogHeader.classList.add('blog-header');
     var blogTitle = document.createElement('h2');
     blogTitle.classList.add('blog-name');
     blogTitle.textContent = blog.title;
@@ -35,10 +37,11 @@ blogs.forEach(function (blog) {
     var blogDescription = document.createElement('p');
     blogDescription.classList.add('blog-description');
     blogDescription.textContent = blog.description;
-    blogInfo.appendChild(blogDate);
+    blogHeader.appendChild(blogTitle);
+    blogHeader.appendChild(blogDate);
+    blogElement.appendChild(blogHeader);
     blogInfo.appendChild(blogImage);
     blogInfo.appendChild(blogDescription);
-    blogElement.appendChild(blogTitle);
     blogElement.appendChild(blogInfo);
     if (blogContainer) {
         blogContainer.appendChild(blogElement);
