@@ -23,6 +23,9 @@ blogs.forEach(function (blog) {
     var blogTitle = document.createElement('h2');
     blogTitle.classList.add('blog-name');
     blogTitle.textContent = blog.title;
+    var blogDate = document.createElement('p');
+    blogDate.classList.add('blog-date');
+    blogDate.textContent = blog.date;
     var blogInfo = document.createElement('div');
     blogInfo.classList.add('blog-info');
     var blogImage = document.createElement('img');
@@ -32,6 +35,7 @@ blogs.forEach(function (blog) {
     var blogDescription = document.createElement('p');
     blogDescription.classList.add('blog-description');
     blogDescription.textContent = blog.description;
+    blogInfo.appendChild(blogDate);
     blogInfo.appendChild(blogImage);
     blogInfo.appendChild(blogDescription);
     blogElement.appendChild(blogTitle);

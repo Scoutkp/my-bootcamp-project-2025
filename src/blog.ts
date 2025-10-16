@@ -36,8 +36,14 @@ blogs.forEach((blog) => {
     blogTitle.classList.add('blog-name')
     blogTitle.textContent = blog.title;
 
+    const blogDate = document.createElement('p');
+    blogDate.classList.add('blog-date');
+    blogDate.textContent = blog.date;
+
     const blogInfo = document.createElement('div');
     blogInfo.classList.add('blog-info');
+
+    
 
     const blogImage = document.createElement('img');
     blogImage.classList.add('blog-image');
@@ -48,6 +54,7 @@ blogs.forEach((blog) => {
     blogDescription.classList.add('blog-description');
     blogDescription.textContent = blog.description;
 
+    blogInfo.appendChild(blogDate);
     blogInfo.appendChild(blogImage);
     blogInfo.appendChild(blogDescription);
     blogElement.appendChild(blogTitle);
