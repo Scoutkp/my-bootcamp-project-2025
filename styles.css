@@ -187,6 +187,29 @@ input:hover[type="submit"] {
   padding: 10px;
 }
 
+.blog-header {
+  display: flex;
+  flex-direction: column;
+  clear:left;
+  float: left;
+}
+
+.blog-name {
+  width: 100%;
+  float: left;
+  font-weight: bold;
+  margin: 20px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.blog-date {
+  float: left;
+  font-size: 15px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
 .blog-info {
   display: flex;
   clear: left;
@@ -204,14 +227,7 @@ input:hover[type="submit"] {
   border-radius: 5px;
 }
 
-.blog-name {
-  width: 100%;
-  float: left;
-  font-weight: bold;
-  margin: 20px;
-  text-align: left;
-  font-size: 20px;
-}
+
 
 .blog-image {
   width: 400px;
