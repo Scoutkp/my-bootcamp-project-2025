@@ -14,7 +14,7 @@ const blogs: Blog[] = [
         description: 'This is the description of the first blog post.',
         image: 'beach.jpg',
         imageAlt: 'Image 1 description',
-        slug: 'post 1',
+        slug: 'post-1',
     },
     {
         title: 'Second Blog Post',
@@ -33,7 +33,11 @@ blogs.forEach((blog) => {
     blogElement.classList.add('blog');
 
     const blogTitle = document.createElement('h2');
+    blogTitle.classList.add('blog-name')
     blogTitle.textContent = blog.title;
+
+    const blogInfo = document.createElement('div');
+    blogInfo.classList.add('blog-info');
 
     const blogImage = document.createElement('img');
     blogImage.classList.add('blog-image');
@@ -41,11 +45,13 @@ blogs.forEach((blog) => {
     blogImage.alt = blog.imageAlt;
 
     const blogDescription = document.createElement('p');
+    blogDescription.classList.add('blog-description');
     blogDescription.textContent = blog.description;
 
+    blogInfo.appendChild(blogImage);
+    blogInfo.appendChild(blogDescription);
     blogElement.appendChild(blogTitle);
-    blogElement.appendChild(blogImage);
-    blogElement.appendChild(blogDescription);
+    blogElement.appendChild(blogInfo);
 
     if (blogContainer) {
         blogContainer.appendChild(blogElement);
