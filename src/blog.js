@@ -13,12 +13,14 @@ blogs.forEach(function (blog) {
     var blogElement = document.createElement('div');
     var blogTitle = document.createElement('h2');
     var blogImage = document.createElement('img');
-    var blogParagraph = document.createElement('p');
+    var blogDescription = document.createElement('p');
+    blogTitle.textContent = blog.title;
     blogImage.src = blog.image;
     blogImage.alt = blog.imageAlt;
+    blogDescription.textContent = blog.description;
     blogElement.appendChild(blogTitle);
     blogElement.appendChild(blogImage);
-    blogElement.appendChild(blogParagraph);
+    blogElement.appendChild(blogDescription);
     if (blogContainer) {
         blogContainer.appendChild(blogElement);
     }

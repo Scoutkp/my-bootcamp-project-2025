@@ -24,14 +24,16 @@ blogs.forEach((blog) => {
     const blogElement = document.createElement('div');
     const blogTitle = document.createElement('h2');
     const blogImage = document.createElement('img');
-    const blogParagraph = document.createElement('p');
+    const blogDescription = document.createElement('p');
 
+    blogTitle.textContent = blog.title;
     blogImage.src = blog.image;
     blogImage.alt = blog.imageAlt;
+    blogDescription.textContent = blog.description;
 
     blogElement.appendChild(blogTitle);
     blogElement.appendChild(blogImage);
-    blogElement.appendChild(blogParagraph);
+    blogElement.appendChild(blogDescription);
 
     if (blogContainer) {
         blogContainer.appendChild(blogElement);
