@@ -32,6 +32,9 @@ blogs.forEach((blog) => {
     const blogElement = document.createElement('div');
     blogElement.classList.add('blog');
 
+    const blogLink = document.createElement('a');
+    blogLink.href = `blog/${blog.slug}.html`;
+
     const blogHeader = document.createElement('div');
     blogHeader.classList.add('blog-header');
 
@@ -46,8 +49,6 @@ blogs.forEach((blog) => {
     const blogInfo = document.createElement('div');
     blogInfo.classList.add('blog-info');
 
-    
-
     const blogImage = document.createElement('img');
     blogImage.classList.add('blog-image');
     blogImage.src = blog.image;
@@ -57,13 +58,17 @@ blogs.forEach((blog) => {
     blogDescription.classList.add('blog-description');
     blogDescription.textContent = blog.description;
 
+    blogLink.appendChild(blogImage);
+
     blogHeader.appendChild(blogTitle);
     blogHeader.appendChild(blogDate);
     blogElement.appendChild(blogHeader);
 
-    blogInfo.appendChild(blogImage);
+    blogInfo.appendChild(blogLink);
     blogInfo.appendChild(blogDescription);
     blogElement.appendChild(blogInfo);
+
+    
 
     if (blogContainer) {
         blogContainer.appendChild(blogElement);
