@@ -1,0 +1,273 @@
+:root {
+  --cg-dark_purple: rgb(60, 9, 108);
+  --cg-light_purple: rgb(179, 97, 246);
+  --cg-lighter_purple: rgb(202, 137, 255);
+  --cg-white: rgb(255, 255, 255);
+  --cg-black: rgb(0, 0, 0);
+  --cg-blue: rgb(36, 94, 255);
+}
+html {
+  height: 100%;
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 5%;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  background-color: var(--cg-dark_purple);
+  color: var(--cg-white);
+  padding: 0px 0px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--cg-light_purple);
+  font-weight: bold;
+  font-size: larger;
+  margin: 0 12px;
+}
+
+.navbar a:hover {
+  color: var(--cg-white);
+  text-decoration: underline;
+}
+
+.nav-list {
+  float: right;
+  list-style: none;
+  margin: 20px;
+}
+
+.logo a {
+  font-family: "Comic mono", monospace;
+}
+
+.logo a:hover {
+  text-decoration: None;
+}
+
+.page-title {
+  margin: 20px;
+}
+
+.about {
+  display: flex;
+  text-align: center;
+  padding: 20px;
+  justify-content: space-between;
+  font-size: 20px;
+  border: 2px solid var(--cg-dark_purple);
+  background-color: var(--cg-lighter_purple);
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.about-text {
+  flex-direction: row;
+  text-align: left;
+}
+
+.about-image {
+  flex-direction: column;
+  float: left;
+  margin: 0px 20px 0px 10px;
+}
+
+.image {
+  border: 2px solid var(--cg-dark_purple);
+}
+
+.image-caption {
+  font-size: 15px;
+  flex-direction: column;
+  clear: left;
+  float: left;
+}
+
+.project-info {
+  display: flex;
+  clear: left;
+  float: left;
+  border: 2px;
+  margin: 0 0 20px 10px;
+}
+
+.project-description {
+  font-size: 15px;
+  padding: 20px;
+  margin: 0 20px 0 0;
+  background-color: var(--cg-lighter_purple);
+  border: 2px solid var(--cg-dark_purple);
+  border-radius: 5px;
+}
+
+.project-name {
+  width: 100%;
+  float: left;
+  font-weight: bold;
+  margin: 20px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.project-image {
+  margin: 0px 20px 0px 10px;
+  border: 2px solid var(--cg-dark_purple);
+}
+
+.project-description {
+  flex-direction: row;
+  text-align: left;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px;
+  font-size: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+    border: 1px solid var(--cg-dark_purple);
+    border-radius: 3px;
+    padding: 10px;
+    margin: 0 0 20px 0;
+}
+
+input[type="submit"] {
+    background-color: var(--cg-dark_purple);
+    color: var(--cg-light_purple);
+    font-weight: bold;
+    font-family: "Comic mono", monospace;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+input:hover[type="submit"] {
+    color: var(--cg-white);
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.resume button {
+  color: var(--cg-light_purple);
+  padding: 10px;
+  font-weight: bold;
+  background-color: var(--cg-dark_purple);
+  border: 2px solid var(--cg-light_purple);
+  border-radius: 5px;
+  width: 150px;
+}
+
+.resume button:hover {
+  color: var(--cg-white);
+}
+
+.entry {
+  border: 2px solid var(--cg-dark_purple);
+  border-radius: 5px;
+  background-color: var(--cg-lighter_purple);
+  padding: 10px;
+}
+
+.blog-header {
+  display: flex;
+  flex-direction: column;
+  clear:left;
+  float: left;
+}
+
+.blog-name {
+  width: 100%;
+  float: left;
+  font-weight: bold;
+  margin: 20px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.blog-date {
+  float: left;
+  font-size: 15px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.blog-info {
+  display: flex;
+  clear: left;
+  float: left;
+  border: 2px;
+  margin: 0 0 20px 10px;
+}
+
+.blog-description {
+  font-size: 15px;
+  padding: 20px;
+  margin: 0 20px 0 0;
+  background-color: var(--cg-lighter_purple);
+  border: 2px solid var(--cg-dark_purple);
+  border-radius: 5px;
+}
+
+
+
+.blog-image {
+  width: 400px;
+  height: auto;
+  margin: 0px 20px 0px 10px;
+  border: 2px solid var(--cg-dark_purple);
+}
+
+.blog-description {
+  flex-direction: row;
+  text-align: left;
+}
+
+body {
+  overflow-y: scroll;
+  color: var(--cg-dark_purple);
+  background-color: var(--cg-light_purple);
+  position: relative;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+}
+
+main {
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+
+.footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: var(--cg-dark_purple);
+  color: var(--cg-white);
+  align-items: center;
+  justify-content: center;
+}
