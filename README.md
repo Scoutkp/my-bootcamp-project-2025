@@ -15,4 +15,4 @@ To submit your work, create a pull request from your own fork (DO NOT MERGE if y
 5. Assign the engineering team as 'Reviewers'
 6. Link the milestone issue to the PR
 
-Visit my [website](https://scoutkp.github.io/bootcamp-project-2025/)!
+Visit my [website](https://scoutkp.github.io/my-bootcamp-project-2025/)!
